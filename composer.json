@@ -1,0 +1,8 @@
+{
+    "name": "phpproxy/phpproxy",
+    "description": "A PHP proxy script with https and post support",
+    "license": "MIT License Copyright (c) 2012 Jens Segers",
+    "autoload": {
+        "psr-0": { "phpproxy": "src/" }
+    }
+}

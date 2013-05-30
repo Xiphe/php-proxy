@@ -8,6 +8,8 @@ Installation
 
 Copy all files to the server that will serve as proxy and edit the config.php file to match your environment.
 
+Or use [composer](http://getcomposer.org/) to integrate the Proxy class into your project.
+
 Usage
 -----
 

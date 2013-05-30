@@ -24,6 +24,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+namespace phpproxy;
+
 class Proxy
 {
     
@@ -33,12 +36,14 @@ class Proxy
     // configuration
     protected $config = array();
 
-    function __construct()
+    function __construct($conf = array())
     {
         // load the config
         $config = array();
-        require ("config.php");
-        
+        require dirname(__FILE__)."/../../config.php";
+
+        $config = array_merge($config, $conf);
+
         // check config
         if (!count($config)) {
             die("Please provide a valid configuration");
